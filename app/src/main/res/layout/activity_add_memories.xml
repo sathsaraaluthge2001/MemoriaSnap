@@ -1,0 +1,132 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E86CC8">
+
+    <!-- Non-scrollable content -->
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/rounded_background2">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="cursive"
+                    android:paddingTop="8dp"
+                    android:text="Add Your Memories"
+                    android:textAlignment="center"
+                    android:textColor="#7C4798"
+                    android:textSize="40sp"
+                    android:textStyle="bold|italic" />
+            </LinearLayout>
+
+            <!-- ImageView -->
+            <ImageView
+                android:id="@+id/imageadd"
+                android:layout_width="240dp"
+                android:layout_height="240dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="86dp"
+                android:layout_marginLeft="145dp"
+                android:layout_marginTop="120dp"
+                android:layout_marginEnd="86dp"
+                android:background="@drawable/imagerou"
+                android:clipToOutline="true"
+                android:src="@mipmap/add" />
+
+            <!-- EditTexts -->
+            <!-- Example EditText (Add more as needed) -->
+            <EditText
+                android:id="@+id/editTextText4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageadd"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="50dp"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="50dp"
+                android:background="@drawable/txtbackground"
+                android:ems="10"
+                android:hint="Title"
+                android:inputType="text"
+                android:minHeight="48dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textColor="#7C4798" />
+
+            <EditText
+                android:id="@+id/editTextText5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editTextText4"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="50dp"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="35dp"
+                android:layout_marginEnd="50dp"
+                android:background="@drawable/txtbackground"
+                android:ems="10"
+                android:hint="Date"
+                android:inputType="text"
+                android:minHeight="48dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textColor="#7C4798" />
+
+            <EditText
+                android:id="@+id/editTextText6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editTextText5"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="35dp"
+                android:layout_marginEnd="50dp"
+                android:background="@drawable/txtbackground"
+                android:ems="10"
+                android:hint="Description"
+                android:inputType="textMultiLine"
+                android:minHeight="48dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textColor="#7C4798" />
+
+            <!-- Rest of your EditTexts, Button, etc. -->
+            <!-- ... -->
+
+            <Button
+                android:id="@+id/addmemobtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/editTextText6"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/txtbackground"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="Add Memory"
+                android:textColor="#7C4798"
+                android:textStyle="bold|italic" />
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

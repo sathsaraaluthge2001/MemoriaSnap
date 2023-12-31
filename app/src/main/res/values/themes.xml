@@ -1,0 +1,18 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.MemoriaSnap" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+
+        <item name="colorPrimary">#E86CC8</item>
+        <item name="colorPrimaryDark">#E86CC8</item>
+
+        <!-- Change the text color of the action bar -->
+        <item name="android:textColorPrimary">#FFFFFF</item>
+        <item name="actionMenuTextColor">#FFFFFF</item>
+
+    </style>
+
+
+    <style name="Theme.MemoriaSnap" parent="Base.Theme.MemoriaSnap" />
+</resources>

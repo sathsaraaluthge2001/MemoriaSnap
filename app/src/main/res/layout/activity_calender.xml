@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E86CC8"
+
+    tools:context=".Calender">
+
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/rounded_background2"
+       >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="cursive"
+                android:text="Snap Calender"
+                android:textAlignment="center"
+                android:textColor="#7C4798"
+                android:layout_marginTop="-50dp"
+                android:textSize="34sp"
+                android:textStyle="bold|italic" />
+
+            <CalendarView
+                android:id="@+id/calendarView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp" />
+
+            <EditText
+                android:id="@+id/event"
+                android:layout_width="280dp"
+                android:layout_height="59dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/txtbackground"
+                android:ems="10"
+                android:hint="Create Event"
+                android:inputType="text"
+                android:minHeight="48dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textColor="#7C4798" />
+
+            <Button
+                android:id="@+id/save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/txtbackground"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="Save"
+                android:textColor="#7C4798"
+                android:textStyle="bold|italic" />
+
+            <Button
+                android:id="@+id/delete"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/txtbackground"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="delete event"
+                android:textColor="#7C4798"
+                android:textStyle="bold|italic" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

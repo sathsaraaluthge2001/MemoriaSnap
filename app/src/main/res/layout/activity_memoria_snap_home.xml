@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MemoriaSnapHome">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#ffffff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="137dp"
+            android:background="@drawable/homebackground"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:fontFamily="cursive"
+                android:shadowColor="#0C0C0C"
+                android:text="MemoriaSnap"
+                android:textAlignment="center"
+                android:textColor="#ffffff"
+                android:textSize="60sp"
+                android:textStyle="bold|italic" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#E86CC8"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="296dp"
+                android:orientation="horizontal"
+                android:background="@drawable/rounded_background2">
+
+                <!-- First container -->
+                <LinearLayout
+                    android:id="@+id/viewMe"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/homeborder"
+                        android:fontFamily="cursive"
+                        android:paddingTop="135dp"
+                        android:text="View Memories"
+                        android:textAlignment="center"
+                        android:textColor="#7C4798"
+                        android:textSize="24sp"
+                        android:textStyle="bold|italic" />
+
+                    <!-- Content for the first container -->
+                </LinearLayout>
+
+                <!-- Second container -->
+                <LinearLayout
+                    android:id="@+id/addMemoLayout"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/homeborder"
+                        android:fontFamily="cursive"
+                        android:paddingTop="135dp"
+                        android:text="Add Memories"
+                        android:textAlignment="center"
+                        android:textColor="#7C4798"
+                        android:textSize="24sp"
+                        android:textStyle="bold|italic" />
+                    <!-- Content for the second container -->
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="296dp"
+                android:orientation="horizontal"
+                android:background="@drawable/rounded_background3">
+
+                <!-- Third container -->
+                <LinearLayout
+                    android:id="@+id/calMemoLayot"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView5"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/homeborder"
+                        android:fontFamily="cursive"
+                        android:paddingTop="135dp"
+                        android:text="Snap Calendar"
+                        android:textAlignment="center"
+                        android:textColor="#7C4798"
+                        android:textSize="24sp"
+                        android:textStyle="bold|italic" />
+
+                    <!-- Content for the third container -->
+                </LinearLayout>
+
+                <!-- Fourth container -->
+                <LinearLayout
+                    android:id="@+id/lockMemoLayot"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/textView6"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/homeborder"
+                        android:fontFamily="cursive"
+                        android:paddingTop="135dp"
+                        android:text="Snap Lock"
+                        android:textAlignment="center"
+                        android:textColor="#7C4798"
+                        android:textSize="24sp"
+                        android:textStyle="bold|italic" />
+                    <!-- Content for the fourth container -->
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
